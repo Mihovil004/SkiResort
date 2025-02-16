@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error</title>
+    <link rel="stylesheet" href="/styles/error.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: gradient(to right, #0037ff, #000000);
+        color: white;
+        text-align: center;
+        padding: 50px;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      p {
+        font-size: 1.2em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Error <%= status %></h1>
+    <p><%= message %></p>
+  </body>
+</html>
