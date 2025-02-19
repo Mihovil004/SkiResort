@@ -27,23 +27,33 @@
           padding: 8px 16px;
           display: inline-block;
         }
-        .navbar a:not(:first-child):hover {
-          background-color: #ddd;
-          color: #000;
-        }
         .navbar .nav-links {
           display: flex;
           gap: 16px;
         }
+        .navbar .nav-links a:hover {
+          color: #f8f9fa;
+          background-color: #000;
+          transition: all 0.5s ease-in-out;
+          border-radius: 5px;
+        }
       }
-      main {
+      .NameBackground {
         display: flex;
         justify-content: center;
         margin: auto;
         height: 30vh;
-        color: #f8f9fa;
-        background-color: #333;
+        background-color: #fffff0;
         font-size: larger;
+      }
+      .padding{
+        padding: 10px           ;
+      }
+      .text-left{
+        border-bottom: 1px solid #7a7a7a;
+        p{
+          width: 50%;
+        }
       }
       .footer {
         background-color: #f8f9fa;
@@ -72,8 +82,17 @@
       </nav>
     </header>
     <main>
-      <section class="name-background">
+      <section class="NameBackground">
         <h1>Ski Resort Purger</h1>
+      </section>
+      <section class="text-left padding">
+        <h3>Accomodation</h3>
+        <p>
+          Our accommodation offers a comfortable and relaxing stay with spacious
+          rooms, modern amenities, and a breathtaking view of the mountains.
+          Enjoy top-tier services and explore our ski tracks for an
+          unforgettable experience.
+        </p>
       </section>
     </main>
     <footer class="footer">
