@@ -15,6 +15,7 @@ const parseForm = bodyParser.urlencoded({ extended: false });
 const csrfProtection = csrf({ cookie: true });
 
 const errorRoutes = require('./routes/errorRoutes');
+const AccomodationRoutes=require('./routes/AccomodationRoutes');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -39,6 +40,7 @@ app.use(csrfProtection);
 
 // Routes
 app.use('/errors', errorRoutes);
+app.use('/accomodation',AccomodationRoutes)
 
 app.get('/', (req, res) => {
     res.render('index');
