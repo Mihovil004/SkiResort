@@ -26,14 +26,47 @@
           padding: 8px 16px;
           display: inline-block;
         }
-        .navbar a:not(:first-child):hover {
-          background-color: #ddd;
-          color: #000;
-        }
         .navbar .nav-links {
           display: flex;
           gap: 16px;
         }
+        .navbar .nav-links a:hover {
+          color: #f8f9fa;
+          background-color: #000;
+          transition: all 0.5s ease-in-out;
+          border-radius: 5px;
+        }
+      }
+      .NameBackground {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        height: 30vh;
+        background-color: #fffff0;
+        font-size: larger;
+      }
+      .info{
+        background-color: rgb(218, 208, 194);
+        margin: 20px;
+        padding: 20px;
+        border-bottom: 1px solid #000;
+        border-radius: 10px;
+      }
+      .padding {
+        padding: 10px;
+      }
+      .text-section {
+        border-bottom: 1px solid #7a7a7a;
+        p {
+          width: 50%;
+        }
+      }
+      .right-aligned {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+        padding: 20px;
       }
       .footer {
         background-color: #f8f9fa;
@@ -55,14 +88,57 @@
         >
         <div class="nav-links">
           <a href="/">Home</a>
-          <a href="/">Accomodation</a>
+          <a href="/accomodation">Accomodation</a>
           <a href="/">Ski Map</a>
           <a href="/">Restaurant Šveđo</a>
         </div>
       </nav>
     </header>
+    <main>
+      <section class="NameBackground">
+        <h1>Apartmans</h1>
+      </section>
+      <section class="info">
+        <h3>Info</h3>
+        <p>
+          Our accommodation offers a comfortable and relaxing stay with
+          spacious rooms, modern amenities, and a breathtaking view of the
+          mountains. Enjoy top-tier services and explore our ski slopes for an
+          unforgettable experience.
+        </p>
+      </section>
+      <section style="margin: 10px;">
+        <section class="right-aligned text-section">
+          <h3>1-bedroom</h3>
+          <p>
+            Our accommodation offers a comfortable and relaxing stay with
+            spacious rooms, modern amenities, and a breathtaking view of the
+            mountains. Enjoy top-tier services and explore our ski slopes for an
+            unforgettable experience.
+          </p>
+        </section>
+        <section class="text-section padding">
+          <h3>2-bedroom</h3>
+          <p>
+            Our accommodation offers a comfortable and relaxing stay with
+            spacious rooms, modern amenities, and a breathtaking view of the
+            mountains. Enjoy top-tier services and explore our ski slopes for an
+            unforgettable experience.
+          </p>
+        </section>
+        <section class="right-aligned text-section">
+          <h3>3-bedroom</h3>
+          <p>
+            Our accommodation offers a comfortable and relaxing stay with
+            spacious rooms, modern amenities, and a breathtaking view of the
+            mountains. Enjoy top-tier services and explore our ski slopes for an
+            unforgettable experience.
+          </p>
+        </section>
+      </section>
+    </main>
     <footer class="footer">
-        <p>&copy; 2023 Ski Resort Purger. All rights reserved.</p>
-      </footer>
+      <p>&copy; 2023 Ski Resort Purger. All rights reserved.</p>
+    </footer>
   </body>
 </html>
